@@ -94,22 +94,22 @@ if (isset($_POST['checkout'])) {
                     </p>
                     <p class="d-flex">
                         <span>Delivery</span>
-                        <span>$10.00</span>
+                        <span>$2.00</span>
                     </p>
                     <p class="d-flex">
                         <span>Discount</span>
-                        <span>$3.00</span>
+                        <span>$2.00</span>
                     </p>
                     <hr>
                     <p class="d-flex total-price">
                         <span>Total</span>
                         <?php if ($allCartTotal->total > 0) : ?>
-                            <span>$<?php echo $allCartTotal->total + 10 - 3; ?></span>
+                            <span>$<?php echo $allCartTotal->total + 2 - 2; ?></span>
                         <?php endif; ?>
                     </p>
                 </div>
                 <form method="POST" action="cart.php">
-                    <input type="hidden" name="total_price" value="<?php echo $allCartTotal->total + 10 - 3; ?>">
+                    <input type="hidden" name="total_price" value="<?php echo $allCartTotal->total + 2 - 2; ?>">
                     <?php if ($allCartTotal->total > 0) : ?>	
                         <button style="background-color: black;" name="checkout" type="submit" class="btn btn-primary py-3 px-5">Proceed to Checkout</button>
                     <?php endif; ?>

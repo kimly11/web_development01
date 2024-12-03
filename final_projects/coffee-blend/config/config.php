@@ -5,7 +5,7 @@
         define("HOST", "localhost");
 
         //dbname
-        define("DBNAME", "coffee_blend");
+        define("DBNAME", "hello");
 
         //user
         define("USER", "root");
