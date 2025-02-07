@@ -47,7 +47,7 @@
                     <?php echo $booking->message; ?>
                     </td>
                     <td><?php echo $booking->status; ?></td>
-                    <td><a href="change-status.php?id=<?php echo $booking->id; ?>" class="btn btn-warning  text-white text-center ">cahnge status</a></td>
+                    <td><a href="change-status.php?id=<?php echo $booking->id; ?>" class="btn btn-warning  text-white text-center ">change status</a></td>
 
                     <td><?php echo $booking->created_at; ?></td>
 
